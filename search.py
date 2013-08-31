@@ -99,8 +99,6 @@ def readAllClips():
     """
     global settings
 
-    alp.log(utils.getKeyChainPassword())
-    
     k = Kippt(settings["username"], password=utils.getKeyChainPassword())
     clips = k.clips().all()
 
